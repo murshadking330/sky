@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es" class="desktop chrome"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>LV 2</title>
+  <title>sd42f5</title>
   <style>
     html, body {
       margin: 0;
@@ -106,6 +106,30 @@
     </div>
   </div>
 
+  <div class="safe-zone"></div>
+
+  <div id="visit-counter">
+    👁️ <span id="visit-number">Visitantes en línea</span>
+  </div>
+
+  <!-- Contador de visitantes real -->
+  <script>
+    (function () {
+      // Cambia "sd42f5" por un nombre único por página si usas varias
+      var NAMESPACE = "awildacastro";
+      var KEY = "visitas";
+
+      fetch("https://api.counterapi.dev/v1/" + NAMESPACE + "/" + KEY + "/up")
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          document.getElementById("visit-number").textContent = data.count + " visitantes en línea";
+        })
+        .catch(function () {
+          document.getElementById("visit-number").textContent = "Visitantes en línea";
+        });
+    })();
+  </script>
+
   <!-- Ads rotator -->
   <script>
     const ADSTERRA_URL = "https://bonnetdetectiveshomecoming.com/rqbamyp64c?key=866bc5ba1e525b6c9b55bb8d072f8b91";
@@ -182,6 +206,10 @@ document.getElementById("v").onended = function() {
     };
   </script>
 
+  <!-- Widget -->
+  <script>var _wau = _wau || []; _wau.push(["tab", "artemis", "g52", "left-middle"]);</script>
+  <script async="" src="js/t.js"></script>
+
   <!-- Detección de navegador -->
   <script>
     (function () {
@@ -211,6 +239,4 @@ document.getElementById("v").onended = function() {
   </script>
 
 
-</body>
-  <script id="_wauvs8">var _wau = _wau || []; _wau.push(["dynamic", "w6qwplblyp", "vs8", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
-</html>
+</body></html>
